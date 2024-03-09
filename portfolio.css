@@ -12,6 +12,10 @@ nav {
     justify-content: space-between;
 }
 
+#top{
+    position: sticky;
+}
+
 
 /* navigation logo */
 #divLogo{
@@ -24,12 +28,8 @@ nav {
     padding: 20px;
     text-decoration: none;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.nav_logo:hover{
-    background-color: rgb(178, 187, 195);
-    color: black;
+    font-size: x-large;
+    font-family: 'Pirata One', sans-serif;
 }
 
 
@@ -66,18 +66,112 @@ nav {
 /* navigation social list part  */
 
 #social_list{
+    margin-right: 20px;
+
     display: flex;
     align-items: center;
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
 
 
-#social_element{
-    color: white;
+#social_element1,#social_element2,#social_element3,#social_element4{
+    color: rgb(255, 255, 255);
     padding: 10px;
 }
 
-#social_element:hover{
-    background-color: hsl(36, 2%, 43%)
+#social_element1:hover{
+    color: hsl(225, 88%, 54%)
+}
+#social_element2:hover{
+    color: rgb(231, 70, 70)
+}
+#social_element3:hover{
+    color: hsl(225, 100%, 39%)
+}
+#social_element4:hover{
+    color: hsl(0, 10%, 56%)
+}
+
+
+
+
+
+/* body */
+
+#body1,#body2{
+    height: 100vh;
+}
+
+#body1{
+    background-color: rgb(19, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body1_text{
+    margin-left: 130px;
+    
+    font-family: 'Pirata One', sans-serif;
+    font-size: 100px;
+    color: white;
+}
+
+.ownphoto{
+    height: 400px;
+    padding-right: 50px;
+}
+
+#descriptAboutme{
+    position: absolute;
+    color: white;
+    left: 70px;
+    padding-top: 200px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#body2{
+    background-color: rgb(20, 244, 169);
+}
+
+
+
+
+
+/* footer */
+
+footer{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+#dragbacktotop{
+    margin-top: -70px;
+
+
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+
+    text-align: center;
+    box-shadow: 1px 1px 3px white;
+    cursor: pointer;
+}
+
+#dragger{
+    margin: 0;
+    padding-top: 10px;
+    font-size: 50px;
+
+    color: rgb(20, 244, 169);
+    text-shadow: 2px 3px 4px rgb(156, 156, 212);
 }
